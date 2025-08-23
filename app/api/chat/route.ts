@@ -1,4 +1,5 @@
-import { openai } from "@ai-sdk/openai";
+import { appConfig } from "@/lib/app-config";
+import { aiModels } from "@/lib/ai-models";
 import {
   streamText,
   UIMessage,
@@ -8,8 +9,9 @@ import {
 export async function POST(req: Request) {
   const { messages }: { messages: UIMessage[] } = await req.json();
   const result = streamText({
-    model: openai("gpt-4o"),
+    model: aiModels[appConfig.aiModel],
     messages: convertToModelMessages(messages),
+    system: appConfig.systemPrompt,
   });
 
   return result.toUIMessageStreamResponse();
