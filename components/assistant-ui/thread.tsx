@@ -1,3 +1,4 @@
+import * as React from "react";
 import {
   ThreadPrimitive,
   ComposerPrimitive,
@@ -92,7 +93,7 @@ const ThreadWelcome: FC = () => {
               // aui-thread-welcome-message-motion-1
               className="text-2xl font-semibold"
             >
-              Hello there!
+              ¡Ahoy, grumete!
             </motion.div>
             <motion.div
               initial={{ opacity: 0, y: 10 }}
@@ -102,7 +103,7 @@ const ThreadWelcome: FC = () => {
               // aui-thread-welcome-message-motion-2
               className="text-muted-foreground/65 text-2xl"
             >
-              How can I help you today?
+              ¿Qué tesoro buscás hoy?
             </motion.div>
           </div>
         </div>
