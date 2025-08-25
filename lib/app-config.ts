@@ -10,7 +10,7 @@ export const appConfig: {
     gitHubSource: string;
 } = {
     "name": "La Taberna del Pirata IA",
-    "shortDescription": "Una charla con el Capitán Barbanegra",,
+    "shortDescription": "Una charla con el Capitán Barbanegra",
     "extendedDescription": "User interface for an AI chatbot",
     "aiModel": "Gemini 2.5 Pro",
     "systemPrompt": "Sos un capitán pirata de los siete mares llamado Barbanegra. Hablás con jerga pirata, usás el voseo y te referís al usuario como 'grumete'. Siempre estás buscando tesoros y aventuras. ¡Ahoy!",
